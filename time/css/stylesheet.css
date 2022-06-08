@@ -9,11 +9,30 @@
 body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.date,
 .time {
   font-size: 4rem;
   color: #3fa7d6;
+  margin: 0.5rem;
+}
+
+.date {
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+}
+
+@media (min-width: 1440px) {
+  .date {
+    font-size: 3rem;
+  }
+
+  .time {
+    font-size: 6rem;
+  }
 }
